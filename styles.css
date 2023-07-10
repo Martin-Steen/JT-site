@@ -1,0 +1,262 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+html {
+  font-size: 1.1rem;
+}
+body {
+  background-color: rgb(234, 237, 239);
+  font-family:Arial, Helvetica, sans-serif;
+  padding-top: 90px;
+
+}
+#hero-name {
+  font-size:20px;
+  text-transform: uppercase;
+  background-color: rgb(26, 25, 25);
+  color:rgb(232, 232, 226);
+  padding-right: 37rem;
+  padding-left: .15rem;  
+}
+#quote {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style:italic;
+  font-size:16px;
+  float:right;
+  margin-right: 60rem;
+  margin-left:10rem;
+  margin-top: 4rem;
+  color:rgb(232, 232, 226);
+  display:flex;
+  position:absolute;
+  width: 22rem;
+} 
+#motto {
+  font-family: cursive;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+#hero {
+  background:linear-gradient(rgba(0,0,0,0.5),rgba(8, 8, 8, 0.5)),url('./media/BW-Lecture.jpg');
+  height: 60rem;
+  background-size:cover;
+  background-repeat: no-repeat;
+  text-align:left;
+  color:rgb(232, 232, 226);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 60px;
+  padding-top: 15%;
+  padding-left: 13%;
+}
+.separator {
+  background-color: #074176;
+  height: 10px;
+  margin-bottom: 20px;
+}
+.navbar {
+  top:0;
+  background-color: rgb(26, 25, 25);
+  color:rgb(232, 232, 226);
+  height:fit-content;
+  padding-top: 1vw;
+  font-size: 0.5rem; 
+  padding-right:1vw;
+  padding-left: 1vw;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom:1dvb;
+  position: fixed;
+}
+#about { 
+  color:rgba(100, 86, 86, 0.609);
+  padding-top: 30px;
+}
+.spacer {
+  height: 10rem;
+}
+.navbar a {
+  text-decoration:none;
+  float:left; 
+  padding-right: 1rem;
+  padding-left: 1rem;
+  font-size: 1rem;
+  color:rgb(232, 232, 226);  
+  }
+ .navbar a:hover {
+    background: rgb(241, 245, 246);
+    color:rgb(4, 54, 70);
+}
+  h2 {
+    color:rgb(232, 232, 226);
+  }
+#about-title {
+  padding-top: 10px;
+  color:rgba(12, 11, 11, 0.671);
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 0;
+  height: 57rem;
+  margin-top:40px;
+}
+.column {
+  padding: 1rem;
+  padding-top:20px;
+  border-radius: 8px;
+  margin-right:7rem;
+  margin-left: 7rem;
+}
+#media-section {
+  height: 500px;
+  text-align: center;
+  background: rgb(26, 25, 25); 
+  color: #a6aab0;
+  
+}
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+p {
+  margin-bottom: 10px;
+  color:rgba(12, 11, 11, 0.671);
+}
+#portrait {
+  border-radius:50%;
+  border-style:solid;
+  border-width: 5px;
+  border-color: #ccced0;
+  height: 75%;
+  }
+.column-left {
+  color:rgba(12, 11, 11, 0.671);
+  padding-left: 10rem;
+  font-weight: bold;  
+} 
+.media-bar img {
+  width: 300px;
+  height: 275px;
+  border-radius: 15%;
+  padding: 20px;
+  padding-bottom: 2px;
+}
+.media-bar img:hover {
+  border: 2px solid aqua;
+  padding: 0px;
+}
+.media-bar {
+  height: 500px;
+  text-align:center; 
+  padding-top: 50PX;
+}
+figure {
+  display:inline-block;
+}
+figcaption {
+  background:#074176;
+  color:rgb(237, 237, 226);
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: small;
+  height: 20px;
+}
+#footer {
+  margin-top: 0px;
+  background:#074176;
+  height: 20rem;
+  color:rgb(191, 191, 181);
+  display: inline-block;
+  width: 100%;
+  text-align:center;
+  padding-left: 17rem;
+  padding-right: 17rem;
+  padding-top: 2rem;
+  border:solid #a6aab0;
+}
+#footer a {
+  text-decoration: none;
+  color:rgb(232, 232, 226);
+}
+#footer a:hover {
+  background-color: rgb(232, 232, 226);
+  color:#074176;
+}
+/* container */
+.padded-boxes {
+  display:flex;
+  flex-wrap:wrap;
+  gap:2rem;
+}
+/* boxes */
+.padded-boxes > * {
+  width:100%;
+  margin:0;
+  background:#074176;;
+}
+/* headings */
+.padded-boxes .heading {
+  background:#074176;
+  margin:0;
+  padding:1rem;
+}
+/* padded content */
+.padded-boxes .padded {
+  background-color: #074176;
+  padding:.1rem 1rem;
+  padding-bottom: 1rem;
+  }
+/* tablet breakpoint */
+@media (min-width:768px) {
+  .padded-boxes > * {
+    width:calc((100% - 4rem) / 3);
+  }
+}
+form {
+  padding-top: .4rem;
+  padding-bottom: 1.8rem ;
+}
+input[type=submit] {
+  width: 10em;  height: 2em;
+  background: #a6aab0;
+  
+}
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  padding-bottom:1px;
+}
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.85;
+}
+
+/* Facebook */
+.fa-facebook {
+  /*background: #3B5998;*/
+  color: white;
+}
+/* Twitter */
+.fa-twitter {
+ /* background: #55ACEE; */
+  color: white;
+}
+.fa-instagram {
+  /*background: #3B5998;*/
+  color: white;
+}
+.fa-linkedin-square {
+ /* background: #3B5998;*/
+  color: white;
+}
+.w3-bar{
+  display:inline-block;
+  position:sticky;
+}
